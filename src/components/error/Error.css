@@ -1,0 +1,13 @@
+.error-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    height: 100vh;
+}
+
+.error-message{
+    font-size: calc(25px+2vmin);
+    font-weight: 500;
+}

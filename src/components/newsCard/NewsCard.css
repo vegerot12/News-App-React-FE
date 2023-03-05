@@ -1,0 +1,138 @@
+
+  
+  
+  .card{
+    background-color:#f6e2ec;
+    
+    border-radius: 10px;
+    margin: 40px 2%;
+    transition: transform .2s; /* Animation */
+    padding: 20px ;
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.15); 
+  }
+  .title{
+    font-size: calc(10px + 1vmin);
+
+  }
+  .img-section{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .details-section{
+    flex-direction: column;
+    margin: 5px ;
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+
+    min-width: 300px;
+  }
+  .excerpt{
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+    font-size: calc(8px + 1vmin);
+    overflow:inherit;
+
+
+  }
+  .link {
+    background-color:  lightpink;
+    padding: 10px;
+    border-radius: 5px;
+    color: crimson;
+    text-decoration: none;
+  }
+  .date {
+     font-size: calc(8px + 1vmin);
+     font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  .author {
+    font-size: calc(8px + 1vmin);
+     font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  
+  
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .img { 
+        width: 250px;
+        height:250px
+    }
+    .details-section{
+     
+      min-width: 250px;
+    }
+    .card:hover {
+      transform: scale(1.10); 
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .img { 
+        width: 550px;
+        height:auto;
+
+    }
+    .card:hover {
+      transform: scale(1.10); 
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .img { 
+        width: 450px;
+        height:auto
+    }
+    .details-section{
+     
+      min-width: 350px;
+    }
+    .card:hover {
+      transform: scale(1.10); 
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .img {
+        width:400px;
+        height:400px
+    }
+
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+   
+    .card{
+     
+      float: left;
+
+      width: calc(25% - 20px);
+      min-height: 800px;
+      flex: 0 1 calc(25% - 1em);
+
+    }
+  }
